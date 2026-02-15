@@ -1,0 +1,39 @@
+# Railsの標準的な無視ファイル
+/.bundle
+/vendor/bundle
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+/storage/*
+!/storage/.keep
+/public/assets
+/public/packs
+/public/packs-test
+node_modules
+yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+# Docker + PostgreSQL 特有の無視ファイル
+.env
+.env.local
+.env.*.local
+docker-compose.override.yml
+.dockerignore
+/tmp/pids/*
+/tmp/cache/*
+/tmp/sockets/*
+
+# PostgreSQLのデータディレクトリ (docker-composeで設定した場合)
+/data
+/pgdata
+
+# シークレットキーなど
+/config/master.key
+/config/credentials.yml.enc
+
+# OS特有
+.DS_Store
