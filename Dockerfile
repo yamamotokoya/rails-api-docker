@@ -17,8 +17,7 @@ ENV APP_ROOT /rails-api-docker
 WORKDIR $APP_ROOT
 
 COPY Gemfile $APP_ROOT
-# 以下、コメントアウト
-# COPY Gemfile.lock $APP_ROOT
+COPY Gemfile.lock $APP_ROOT
 RUN bundle install
 
 COPY . $APP_ROOT
